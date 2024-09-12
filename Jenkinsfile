@@ -3,7 +3,7 @@ pipeline{
     stages{
 	    stage('Build Image') {
 	        steps{
-	            sh 'sudo docker build -t niroshsuthagar/flaskapp'
+	            sh 'sudo docker build -t niroshsuthagar/flaskapp .'
 	        }
 	    }
 	    stage('Deploy Container'){
